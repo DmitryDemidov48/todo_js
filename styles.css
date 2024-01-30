@@ -1,0 +1,158 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #34495e; /* темно-серый цвет текста */
+}
+
+body {
+    background-color: #ecf0f1; /* светло-серый цвет фона */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.display-4 {
+    color: #3498db;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card-header {
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.form-control {
+    border: 1px solid #ced4da;
+    color: #495057;
+    background-color: #fff;
+}
+
+.btn-primary {
+    color: #f1eded;
+    background-color: #007bff;
+    border-color: #e2e8ef;
+}
+
+.btn-red {
+    color: #f1eded;
+    background-color: #cc2626;
+    border-color: #e2e8ef;
+}
+
+.btn-red:hover {
+    background-color: #a11b1b;
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.task-title {
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.gray {
+    color: #BDBDBD;
+}
+
+.task-title--done {
+    text-decoration: line-through;
+    color: #CDCDCD;
+}
+
+.task-item__buttons {
+    display: flex;
+    column-gap: 5px;
+}
+
+/* Стили для блока "Список задач пуст" */
+.empty-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.empty-list__title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 350;
+}
+
+.empty-list__icon {
+    color: #42BE2A;
+    font-size: 32px;
+}
+
+/* Стили для кнопок действий */
+.btn-action {
+    background-color: #e0e5ea;
+    padding: 8px 10px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    transition: opacity 0.2s ease-in;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-action:hover {
+    background-color: #e0e5ea;
+    opacity: 1;
+}
+
+.btn-action img {
+    pointer-events: none;
+}
+
+/* Стили для уведомлений */
+.notify-holder {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Стили для адаптивного дизайна */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+}

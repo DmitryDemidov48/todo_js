@@ -142,7 +142,7 @@ function createActionButton(action) {
         button.classList.add('btn-action');
 
         const icon = document.createElement('img');
-        icon.src = action === 'done' ? '/img/tick.svg' : '../img/cross.svg';
+        icon.src = action === 'done' ? '/tick.svg' : '../img/cross.svg';
         icon.alt = action === 'done' ? 'Done' : 'Delete';
         icon.width = 18;
         icon.height = 18;

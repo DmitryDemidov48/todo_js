@@ -5,7 +5,7 @@ const tasksList = document.querySelector('#tasksList');
 const deleteAllBtn = document.getElementById('deleteAllBtn');
 
 const svgTick = `img/tick.svg`;
-const svgCross = 'img/cross.svg';
+const svgCross = `img/cross.svg`;
 
 
 // Добавим обработчик события для кнопки "Удалить Все"

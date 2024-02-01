@@ -4,6 +4,10 @@ const taskInput = document.querySelector('#taskInput');
 const tasksList = document.querySelector('#tasksList');
 const deleteAllBtn = document.getElementById('deleteAllBtn');
 
+const svgTick = '../img/tick.svg';
+const svgCross = '../img/cross.svg';
+
+
 // Добавим обработчик события для кнопки "Удалить Все"
 deleteAllBtn.addEventListener('click', deleteAllTasks);
 
@@ -142,7 +146,7 @@ function createActionButton(action) {
         button.classList.add('btn-action');
 
         const icon = document.createElement('img');
-        icon.src = action === 'done' ? '../img/tick.svg' : '../img/cross.svg';
+        icon.src = action === 'done' ? svgTick : svgCross;
         icon.alt = action === 'done' ? 'Done' : 'Delete';
         icon.width = 18;
         icon.height = 18;

@@ -4,7 +4,7 @@ const taskInput = document.querySelector('#taskInput');
 const tasksList = document.querySelector('#tasksList');
 const deleteAllBtn = document.getElementById('deleteAllBtn');
 
-const svgTick = 'img/tick.svg';
+const svgTick = `img/tick.svg`;
 const svgCross = 'img/cross.svg';
 
 
